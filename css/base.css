@@ -1,6 +1,8 @@
 /* Mobile Styling */
 body {
   font-size: 30px;
+  width: 480px;
+  margin: 0 auto;
 }
 
 header {
@@ -26,6 +28,12 @@ footer {
 
 /* Desktop Styling */
 @media screen and (min-width: 768px) {
+
+  body {
+    width: 960px;
+    margin: 0 auto;
+  }
+  
   header {
     width: 958px;
     height: 98px;
