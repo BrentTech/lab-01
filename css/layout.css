@@ -7,63 +7,63 @@ p {
 }
 
 main nav {
-  width: 478px;
+  width: 100%;
   height: 148px;
   position: relative;
-  border: 1px solid black;
+  outline: 1px solid black;
 }
 
 main section:first-of-type {
-  height: 250px
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 main section:first-of-type div {
-  width: 478px;
-  height: 123px;
+  width: 100%;
+  height: 50%;
   position: relative;
-  border: 1px solid black;
+  outline: 1px solid black;
 }
 
 main section:last-of-type {
-  height: 500px
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 main section div {
-  width: 238px;
+  width: 50%;
   height: 248px;
-  float: left;
   position: relative;
-  border: 1px solid black;
+  outline: 1px solid black;
 }
 
-/* Desktop Styling */
-@media screen and (min-width: 768px) {
+/* Tablet Styling */
+@media screen and (min-width: 700px) and (max-width: 1000px) {
   main nav {
-    width: 20%;
-    /* max-width: 198px; */
-    height: 598px;
-    border: 1px solid black;
-    background-color: lightgray;
+    width: 100%;
+    height: 100px;
+    background-color: aqua;
   }
   
   main section:first-of-type {
     height: 200px;
     width: 100%;
+    background-color: aqua;
   }
 
-  main div:first-of-type {
+  main .container {
     display: flex;
-    /* align-content: stretch; */
     flex-wrap: wrap;
     width: 100%;
-    /* max-width: 770px; */
+    background-color: aqua;
   }
   
   main section:first-of-type div {
     width: 50%;
-    max-width: 378px;
-    height: 198px;
-    border: 1px solid black;
+    height: 100%;
+    outline: 1px solid black;
   }
   
   main section:last-of-type {
@@ -73,8 +73,46 @@ main section div {
   
   main section div {
     width: 25%;
-    max-width: 188px;
     height: 248px;
-    border: 1px solid black;
+    outline: 1px solid black;
+  }
+}
+
+/* Desktop Styling */
+@media screen and (min-width: 1000px) {
+  main nav {
+    width: 20%;
+    height: 598px;
+    outline: 1px solid black;
+    background-color: lightpink;
+  }
+  
+  main section:first-of-type {
+    height: 200px;
+    width: 100%;
+  }
+
+  main .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 100%;
+  }
+  
+  main section:first-of-type div {
+    width: 50%;
+    height: 100%;
+    outline: 1px solid black;
+  }
+  
+  main section:last-of-type {
+    height: 250px;
+    width: 100%;
+  }
+  
+  main section div {
+    width: 25%;
+    height: 248px;
+    outline: 1px solid black;
   }
 }
